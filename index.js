@@ -2,7 +2,7 @@
 // require("./js-foundation/destructuring");
 // const { getUserById } = require("./js-foundation/callback");
 // const { getUserById } = require("./js-foundation/arrow");
-require("./js-foundation/factory");
+require("./src/js-foundation/factory");
 
 // const id = 1;
 
