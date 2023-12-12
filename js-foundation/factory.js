@@ -1,13 +1,14 @@
 const { v4: uuidv4 } = require("uuid");
+const getAge = require("get-age");
 
 const obj = { name: "John", birdhdate: "1981-12-30" };
 
 const buildPerson = ({ name, birdhdate }) => {
 	return {
-		id: new Date().getTime(),
+		id: uuidv4(),
 		name,
 		birdhdate,
-		age: new Date().getFullYear() - new Date(birdhdate).getFullYear(),
+		age: getAge(birdhdate),
 	};
 };
 
