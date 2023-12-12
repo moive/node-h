@@ -5,4 +5,6 @@ const emailTemlate = `
 </div>
 `;
 
-console.log(emailTemlate);
+module.exports = {
+	emailTemlate,
+};

@@ -1,1 +1,3 @@
-require("./js-foundation/template");
+const { emailTemlate } = require("./js-foundation/template");
+
+console.log(emailTemlate);
