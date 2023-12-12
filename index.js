@@ -1,3 +1,2 @@
 const { emailTemlate } = require("./js-foundation/template");
-
-console.log(emailTemlate);
+require("./js-foundation/destructuring");
