@@ -4,11 +4,15 @@
   "description": "My first app node",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
-    "dev":"echo 'From console'",
+    "start": "node index.js",
+    "dev": "nodemon src/index.js",
+    "demo:echo": "echo 'From console'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Moive <mvelasquezdeveloper@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
