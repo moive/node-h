@@ -1,5 +1,6 @@
 const getPokemonById = require("./apiPokemon");
 
-getPokemonById(2, (pokemon) => {
-	console.log(pokemon);
-});
+getPokemonById(3)
+	.then((pokemon) => console.log({ pokemon }))
+	.catch((err) => console.log({ err: err.message }))
+	.finally(() => console.log("Finished processing"));
